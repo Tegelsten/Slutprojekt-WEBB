@@ -1,8 +1,13 @@
 @CHARSET "UTF-8";
 
+body
+{
+	margin: auto;
+	background-color: darkblue;
+}
+
 .menu{
 	position: fixed;
-	margin: -8px;
 	position: fixed;
 	height: 100%;
 	width: 15%;
@@ -38,6 +43,7 @@
 {
 	width: 85%;
 	height: 700px;
+	
 	background-color: red;
 	position: relative;
 	float: right;
@@ -45,18 +51,19 @@
 
 .headDiv
 {
-	width: 100%;
+	width: 85%;
 	height: 150px;
 	margin-top: -5%;
 	background-color: green;
 	position: relative;
+	float: right;
 }
 
 h1
 {
 	text-align: center;
 	color: gold;
-	margin-top: 5%;
+	margin-top: 6.5%;
 	width: 40%;
 	height: 0%;
 	font-size: 20px;
