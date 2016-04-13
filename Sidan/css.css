@@ -3,16 +3,16 @@
 body
 {
 	margin: auto;
-	background-color: darkblue;
+	
 }
 
 .menu{
 	position: fixed;
-	position: fixed;
 	height: 100%;
 	width: 15%;
-	min-width: 250px;
+	
 	background-color: #1e1d1d;
+
 
 }
 #titel{
@@ -38,15 +38,18 @@ body
 	margin-top: 10px;
 }
 
--------
+
 .mainDiv
 {
 	width: 85%;
-	height: 700px;
+	height: 100%;
+
+	margin-left: 15%;
 	
 	background-color: red;
-	position: relative;
-	float: right;
+	position: fixed;
+
+	
 }
 
 .headDiv
@@ -59,7 +62,7 @@ body
 	float: right;
 }
 
-h1
+h3
 {
 	text-align: center;
 	color: gold;
