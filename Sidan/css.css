@@ -3,7 +3,6 @@
 body
 {
 	margin: auto;
-	background-color: darkblue;
 }
 
 .menu{
@@ -38,28 +37,37 @@ body
 	margin-top: 10px;
 }
 
--------
+------------------
 .mainDiv
 {
 	width: 85%;
-	height: 700px;
-	
+	height: 100%;
 	background-color: red;
-	position: relative;
+	position: fixed;
 	float: right;
 }
 
 .headDiv
 {
 	width: 85%;
-	height: 150px;
-	margin-top: -5%;
+	height: 75px;
 	background-color: green;
 	position: relative;
 	float: right;
 }
 
-h1
+.questDiv
+{
+	width: 85%;
+	height: 150px;
+	background-color: purple;
+	position: relative;
+	float: right;
+}
+
+
+
+#huvud
 {
 	text-align: center;
 	color: gold;
@@ -68,6 +76,13 @@ h1
 	height: 0%;
 	font-size: 20px;
 
+}
+
+#quest
+{
+	text-align: center;
+	font-size: 30px;
+	font-family: comic sans;
 }
 
 #searchbar
