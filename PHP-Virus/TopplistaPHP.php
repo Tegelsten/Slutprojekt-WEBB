@@ -28,8 +28,7 @@
 				echo '<tr><td class="FaktaID" align="left">' .
 			
 				$row['ID'] . '</td><td align="center"><a href="' . 
-				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center">' . 
-				$row['Roster'];
+				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center">' . $row['Roster'];
 				
 				echo '</tr>';
 		
