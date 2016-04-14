@@ -1,3 +1,4 @@
+
 @CHARSET "UTF-8";
 
 body
@@ -38,7 +39,7 @@ body
 	margin-top: 10px;
 }
 
-
+/*--------------*/
 .mainDiv
 {
 	width: 85%;
@@ -46,32 +47,54 @@ body
 	margin-left: 15%;
 	background-color: red;
 	position: fixed;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> origin/master
 }
 
 .headDiv
 {
-	width: 85%;
-	height: 150px;
-	margin-top: -5%;
+	width: 100%;
+	height: 75px;
 	background-color: green;
 	position: relative;
 	float: right;
 }
 
-h3
+
+.questDiv
+{
+	width: 100%;
+	height: 150px;
+	background-color: purple;
+	position: relative;
+	float: right;
+}
+
+.contentDiv
+{
+
+}
+
+#huvud
 {
 	text-align: center;
 	color: gold;
-	margin-top: 6.5%;
 	width: 40%;
 	height: 0%;
 	font-size: 20px;
+}
 
+#quest
+{
+	text-align: center;
+	font-size: 30px;
+	font-family: comic sans;
 }
 
 #searchbar
 {
 	margin-left: 80%;
-	margin-top: 0%;
 }
