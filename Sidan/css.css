@@ -5,13 +5,14 @@ body
 	margin: auto;
 }
 
+
 .menu{
-	position: fixed;
 	position: fixed;
 	height: 100%;
 	width: 15%;
-	min-width: 250px;
+	
 	background-color: #1e1d1d;
+
 
 }
 #titel{
@@ -37,14 +38,16 @@ body
 	margin-top: 10px;
 }
 
+
 ------------------
 .mainDiv
 {
 	width: 85%;
 	height: 100%;
+	margin-left: 15%;
 	background-color: red;
 	position: fixed;
-	float: right;
+	
 }
 
 .headDiv
@@ -56,6 +59,7 @@ body
 	float: right;
 }
 
+
 .questDiv
 {
 	width: 85%;
@@ -65,13 +69,10 @@ body
 	float: right;
 }
 
-
-
 #huvud
 {
 	text-align: center;
 	color: gold;
-	margin-top: 6.5%;
 	width: 40%;
 	height: 0%;
 	font-size: 20px;
@@ -88,5 +89,4 @@ body
 #searchbar
 {
 	margin-left: 80%;
-	margin-top: 0%;
 }
