@@ -4,6 +4,23 @@
 		<title>Triviapoll</title>
 		<link href="css.css" rel="stylesheet" />
 		<meta charset="utf-8">
+		<script>
+			function search(string){
+				var xmlhttp;
+				if(window.XMLHttpRequest){
+					xmlhttp = new XMLHttpRequest();
+				}else{
+					xmlhttp = new ActiveXObject("XMLHTTP");
+				}
+				xmlhttp.onreadystatechange = function(){
+					if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+						document.getElementById("search").innerHTML = xmlhttp.responseText;
+					}
+				}
+				xmlhttp.open("GET", "search.php?s="+string, true);
+				xmlhttp.send(null);
+			}
+		</script>
 	</head>
 		<body>	
 		<script type="text/javascript">
@@ -37,11 +54,14 @@
 		<div class="mainDiv">
 
 			<div class="headDiv">
-
+				
 
 				<h3 id="huvud"> Smör på mackan </h3>
 
-	  			<input id="searchbar"></input>
+	  			<div style="text-align: center; width: 500px; margin: 0 auto;">
+            <input type="text" placeholder="Search that FACT" onkeyup="search(this.value)" id="text" >
+            <div id="search"></div>
+  		</div>
 
 	  		</div>
 
