@@ -45,21 +45,24 @@ a:link, a:active, a:visited{
 	
 }
 
-@media screen and ( min-width: 250px ){
-	.mainDiv{
-		margin: 0 15% 0 0;
-	}
-}
-
 .mainDiv
 {
 	width: 85%;
 	height: 100%;
 	margin-left: 15%;
-	min-width: 700px;
+	min-width: 1000px;
 	background-color: red;
 	position: fixed;
 
+}
+#topplista{
+
+	width: 100%;
+	height: 100%;
+	border: solid 5px black;
+	background-color: grey;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .headDiv
@@ -123,24 +126,4 @@ a:link, a:active, a:visited{
 	width: 15%;
 	height: 20%;
 	position: relative;
-}
-
-#search
-{
-	width: 250px; margin: 0 auto; max-height: 150px; border: 1px solid #f4f4f4; overflow: hidden;
-}
-
-#text
-{
-	width: 250px; padding: 10px; border: 1px solid #f4f4f4; border-radius: 3px;
-}
-
-#searchtitle
-{
-	width: 250px; padding: 10px; background: #fff;
-}
-
-#searchtitle:hover
-{
-	background: #f4545f;
 }

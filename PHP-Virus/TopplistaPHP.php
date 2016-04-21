@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>PHP</title>
+<link href='/sidan/css.css' rel='stylesheet' />
 </head>
-    	
+    
 	<?php 
 		
 		require_once('phpsaurus.php');
@@ -49,5 +50,55 @@
 	?>
 
 <body>
+	<div class="menu">
+			<div id="swag">
+				<h1 id="titel"><span style="color:blue">Triviall</span><span style="color:green">poll</span></h1>
+				<a href="">
+					<div class="links">
+						<h2>Topplista</h2>
+					</div>
+				</a>
+				<a href="">
+					<div class="links">
+						<h2>Random</h2>
+					</div>
+				</a>
+				<a href="">	
+					<div class="links">
+						<h2>Hot</h2>
+					</div>
+				</a>
+				<a href="">
+					<div class="links">
+						<h2>Submit</h2>
+					</div>
+				</a>
+			</div>
+		</div>	
+
+		<div class="mainDiv">
+
+			<div class="headDiv">
+				
+
+				<h3 id="huvud"> Smör på mackan </h3>
+
+	  			<div style="text-align: center; width: 500px; margin: 0 auto;">
+				<input type="text" placeholder="Search that FACT" onkeyup="search(this.value)" id="text" >
+				<div id="search"></div>
+				</div>
+
+	  		</div>
+
+	  		<div class="questDiv">
+	  			<h3 id="quest"> Vilken macka smörar du på?</h3>
+
+	  		</div>
+
+	  		<div class="contentDiv">
+	  			
+	  		</div>
+
+	  	</div>
 </body>
 </html>
