@@ -16,19 +16,17 @@
 	
 		if($response){
 	
-			echo '<table border="1" align="left" cellspacing="2" cellpadding="7" width="400">
+			echo '<table border="1" id="nagonting2">
 		
 			<tr>
-			<td align="left"><h3>Fakta ID</h3></td>
+			
 			<td align="left" id="nagonting"><h3>Fakta</h3></td>
 			<td align="left" id="nagonting"><h3>Roster</h3></td>
 			</tr>';
 		
 			while($row = mysqli_fetch_array($response)){
 		
-				echo '<tr><td class="FaktaID" align="left">' .
-			
-				$row['ID'] . '</td><td align="center"><a href="' . 
+				echo '<tr><td align="center"><a href="' . 
 				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center">' . $row['Roster'];
 				
 				echo '</tr>';

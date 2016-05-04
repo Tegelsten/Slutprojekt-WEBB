@@ -120,7 +120,6 @@ a:link, a:active, a:visited{
 	font-size: 30px;
 	font-family: comic sans;
 }
-
 #searchbar
 {
 	margin-left: 100%;
@@ -129,3 +128,10 @@ a:link, a:active, a:visited{
 	height: 20%;
 	position: relative;
 }
+/*PHP CSS*/
+#nagonting2{
+	width: 100%;
+	height: 100%;
+	
+
+} 
