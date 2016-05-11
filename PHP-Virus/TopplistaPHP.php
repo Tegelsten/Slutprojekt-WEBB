@@ -10,7 +10,7 @@
 		
 		require_once('phpsaurus.php');
 		
-		$query = "SELECT `ID`, `FaktaNamn`, `FaktaLank`, `Roster` FROM `unfakta` ORDER BY Roster DESC;";
+		$query = "SELECT `ID`, `FaktaNamn`, `FaktaLank`, `Roster` FROM `unfakta` ORDER BY Roster DESC LIMIT 10;";
 
 		$response = @mysqli_query($dbc, $query);
 	
