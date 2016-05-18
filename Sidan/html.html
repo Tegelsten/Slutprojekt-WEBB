@@ -21,6 +21,9 @@
 				xmlhttp.send(null);
 			}
 		</script>
+        
+        	<?php include ("../PHP-Virus/SidoRoster.php");?>
+        
 	</head>
 		<body>	
 		<script type="text/javascript">
@@ -77,7 +80,16 @@
 	  			<div id="Alliance"></div>
 
 	  			<script type="text/javascript">
-	  				document.getElementById("Horde").style.width = "50%";
+				
+				var sidaett = <?php echo $Sida1; ?>;
+				var sidaroster = <?php echo $Roster1; ?>;
+				
+				var sidatva = <?php echo $Sida2; ?>;
+				var sidaroster2 = <? echo $Roster2; ?>;
+				
+				
+				
+	  				document.getElementById("Horde").style.width = "%";
 	  			</script>
 
 	  		</div>
