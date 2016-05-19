@@ -148,8 +148,32 @@ a:link, a:active, a:visited{
 	margin: -45px;
 	margin-right: 0px;
 	background-color: #642673;
-
 }
+
+.Knapp1
+{
+	margin-bottom: 0px;
+    margin-top: 30px;
+    height: 30px;
+	width: 150px;
+	border: solid white 1;
+	color: white;
+	background-color: green;
+}
+
+.Knapp2
+{
+	/*margin-left: 666px;*/
+	margin-left: 82%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	width: 150px;
+	height: 30px;
+	border: solid white 1px;
+	color: white;
+	background-color: green;
+}
+
 
 #searchbar
 {
