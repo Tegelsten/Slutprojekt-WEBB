@@ -166,3 +166,9 @@ a:link, a:active, a:visited{
 	margin-right: auto;
 
 } 
+
+#search{
+	background-color:#FFFFFF;
+	width:40%;
+	margin-left:160px;
+}

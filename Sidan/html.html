@@ -22,8 +22,6 @@
 			}
 		</script>
         
-        	<?php include ("../PHP-Virus/SidoRoster.php");?>
-        
 	</head>
 		<body>	
 		<script type="text/javascript">
@@ -52,7 +50,7 @@
 					</div>
 				</a>
 			</div>
-		</div>	
+		</div>
 
 		<div class="mainDiv">
 
@@ -78,20 +76,32 @@
 	  			<div id="Horde"></div>
 
 	  			<div id="Alliance"></div>
+				
+                <?php 
+					include("SidoRoster.php"); 
+				?>
 
+                
 	  			<script type="text/javascript">
 				
-				/*var sidaett = <?php echo $Sida1; ?>;
+				var sidaett = '<?php echo $Sida1 ?>'
 				var sidaroster = <?php echo $Roster1; ?>;
+						
+				var sidatva = '<?php echo $Sida2 ?>'
+				var sidaroster2 = <?php echo $Roster2; ?>;
 				
-				var sidatva = <?php echo $Sida2; ?>;
-				var sidaroster2 = <?php echo $Roster2; ?>;*/
-
-				var svar = 10+2;
-				var chupacabra = (10/svar)*100;				
+				var svar = sidaroster+sidaroster2;
+				var chupacabra = Math.round((sidaroster/svar)*100);	
 				
-	  			document.getElementById("Horde").style.width = "70%";
+	  			document.getElementById("Horde").style.width = chupacabra + '%';
 	  			</script>
+                
+                <h3 style="color:#FFFFFF; "><?php echo $Sida1; ?></h3>
+                
+                <h3 style="color:#FFFFFF; "><?php echo $Roster1; ?></h3>
+                
+                <h3 style="color:#FFFFFF; "><?php echo $Sida2; ?></h3>
+                <h3 style="color:#FFFFFF; "><?php echo $Roster2; ?></h3>
 
 	  		</div>
 
