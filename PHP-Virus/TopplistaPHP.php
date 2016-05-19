@@ -20,14 +20,14 @@
 		
 			<tr>
 			
-			<td align="left" id="nagonting"><h1>Fakta</h1></td>
-			<td align="left" id="nagonting"><h1>Roster</h1></td>
+			<td align="left" id="nagonting"><h3>Fakta</h3></td>
+			<td align="left" id="nagonting"><h3>Roster</h3></td>
 			</tr>';
 		
 			while($row = mysqli_fetch_array($response)){
 		
-				echo '<tr><td align="center" id="dragonting"><a href="' . 
-				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center" id="dragonting2">' . $row['Roster'];
+				echo '<tr><td align="center"><a href="' . 
+				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center">' . $row['Roster'];
 				
 				echo '</tr>';
 		
