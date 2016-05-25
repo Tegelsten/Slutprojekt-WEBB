@@ -6,10 +6,12 @@
 		<meta charset="utf-8">
 	</head>
 		<body>	
+		<script type="text/javascript">
+		</script>
 		<div class="menu">
+			<a href="html.html">
 			<div id="swag">
-				<a href="html.html">
-				<h1 id="titel"><span style="color:blue">Trivial</span><span style="color:green">poll</span></h1>
+				<h1 id="titel"><span style="color:#1D8641">Trivial</span><span style="color:#642673">poll</span></h1>
 			</a>
 				<a href="TopplistanHtml.html">
 					<div class="links">
@@ -20,7 +22,7 @@
 					<div class="links">
 						<h2>Random</h2>
 					</div>
-				</a>
+				</a> 
 				<a href="">	
 					<div class="links">
 						<h2>Hot</h2>
@@ -32,14 +34,32 @@
 					</div>
 				</a>
 			</div>
-		</div>	
+		</div>
 
 		<div class="mainDiv">
-			<div id="topplista">
-            	<h1 id="phph1">Topplist</h1>
-            	<?php include ("../PHP-Virus/TopplistaPHP.php");?>
 
-			</div>
+			<div class="headDiv">
+				
+				<h3 id="huvud"> Submit </h3>
+
+	  		<div class="questDiv">
+	  			<h3 id="quest"> Submit your questions here</h3>
+
+	  		</div>
+
+	  	<div class="contentDiv">
+
+	  		<div id="submitDiv">
+			<p class="submitp">- Spamma inte</p>
+			<p class="submitp">- Skicka inget dumt</p>
+			<p class="submitp">- Skriv inte "fisken sköter disken"</p>
+
+			<input id="submit"></input>
+
+		</div>
+
+	  		</div>
+
 	  	</div>
 	</body>
 </html>
