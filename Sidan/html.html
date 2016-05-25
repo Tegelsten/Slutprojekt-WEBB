@@ -97,20 +97,27 @@
 	  			</script>
                 
                 <script type="text/javascript">
-                	
+				
+				var Rosts = <?php echo $ID; ?>;
+				
 					function Rost1(){
-						window.location.href = "Rosta.php?Rost=" + <?php echo $IDs; ?>;
+						window.location.href = "Rosta.php?Rost=" + Rosts;;
 					}
 					
 					function Rost2(){
-						window.location.href = "Rosta2.php?Rost=" + <?php echo $IDs; ?>;
+						window.location.href = "Rosta2.php?Rost=" + Rosts;
 					}
                 
                 </script>
-								
-                <p style="margin-top: 0px; margin-bottom: 0px; height: 0px;"><button onClick="Rost1()" class="Knapp1"><?php echo $Sida1; ?></button></p>
-
-                <p style="margin-bottom: 0px; margin-top: 30px; height: 5px;"><button onClick="Rost2()" class="Knapp2"><?php echo $Sida2; ?></button></p>
+				
+                <div class="knapparDiv">
+                	
+                    <p> 
+                    <button onClick="Rost1();" class="Knapp1"><?php echo $Sida1; ?></button></p>
+    
+                    <p><button onClick="Rost2();" class="Knapp2"><?php echo $Sida2; ?></button></p>
+                    
+                </div>
 
                 <h3 style="color:#FFFFFF; text-align:center; margin-top: 0px;"> <?php echo $Roster1; ?>/<?php echo $Roster2; ?></h3>
 

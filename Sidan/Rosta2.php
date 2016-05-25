@@ -12,7 +12,7 @@
 	
 		// $query = "INSERT INTO `ponangs`(`highscor`) VALUES ('" . $variabel . "')";
 		
-		$query = "UPDATE `unversus` SET Roster2 = Roster2 + 1 WHERE $Sida2 = $variabel";
+		$query = "UPDATE `unversus` SET Roster2 = Roster2 + 1 WHERE ID = " . $variabel . "";
 		
 		// UPDATE test SET comebackvotes = 	comebackvotes + 1 WHERE comebackid = $wutu;";
 		

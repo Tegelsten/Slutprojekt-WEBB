@@ -9,7 +9,7 @@
 		
 		include ("phpsaurus.php");
 	
-		$query = "SELECT `Sida1`, `Roster1`, `Sida2`, `Roster2`,'ID' FROM unversus LIMIT 1";
+		$query = "SELECT `Sida1`, `Roster1`, `Sida2`, `Roster2`,ID FROM unversus LIMIT 1";
 
 		$response = @mysqli_query($dbc, $query);
 		
@@ -25,7 +25,7 @@
 				
 				$Roster2 = $row['Roster2'];
 				
-				$IDs = $row['ID'];
+				$ID = $row['ID'];
 			
 			}
 			
@@ -33,6 +33,7 @@
 	
 				echo "Nope";
 				echo mysqli_error($dbc);
+
 
 		}
 		
