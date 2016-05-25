@@ -21,13 +21,13 @@
 			<tr>
 			
 			<td align="left" id="nagonting"><h3>Fakta</h3></td>
-			<td align="left" id="nagonting"><h3>Roster</h3></td>
+			<td align="left" id="nagonting"><h3>Antal röster</h3></td>
 			</tr>';
 		
 			while($row = mysqli_fetch_array($response)){
 		
-				echo '<tr><td align="center"><a href="' . 
-				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center">' . $row['Roster'];
+				echo '<tr id="hej"><td align="center" id="hej" ><a style=" color: rgb(228, 192, 0); "href="' . 
+				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center" >' . $row['Roster'];
 				
 				echo '</tr>';
 		
