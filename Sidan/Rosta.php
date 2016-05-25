@@ -6,15 +6,11 @@
 </head>
 	
    <?php
-   		$variabel = $_GET['poang'];
+   		$variabel = $_GET['Rost'];
 		
 		include ("phpsaurus.php");
 	
-		// $query = "INSERT INTO `ponangs`(`highscor`) VALUES ('" . $variabel . "')";
-		
-		$query = "UPDATE `unversus` SET Roster1 = Roster1 + 1 WHERE 1";
-		
-		// UPDATE test SET comebackvotes = 	comebackvotes + 1 WHERE comebackid = $wutu;";
+		$query = "UPDATE `unversus` SET Roster1 = Roster1 + 1 WHERE ID = " . $variabel . "";
 		
 		$response = @mysqli_query($dbc, $query);
 		
@@ -22,6 +18,7 @@
 			header('Location: html.html');
 		} else {
 			echo "Error";
+			echo $variabel;
 		 }
    ?>
     
