@@ -6,13 +6,13 @@
 </head>
 
 	<?php
-		$variabel = $_GET['poang'];
+		$variabel = $_GET['Rost'];
 		
 		include ("phpsaurus.php");
 	
 		// $query = "INSERT INTO `ponangs`(`highscor`) VALUES ('" . $variabel . "')";
 		
-		$query = "UPDATE `unversus` SET Roster2 = Roster2 + 1 WHERE 1";
+		$query = "UPDATE `unversus` SET Roster2 = Roster2 + 1 WHERE ID = " . $variabel . "";
 		
 		// UPDATE test SET comebackvotes = 	comebackvotes + 1 WHERE comebackid = $wutu;";
 		
