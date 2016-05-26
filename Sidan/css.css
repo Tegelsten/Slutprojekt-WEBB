@@ -181,8 +181,6 @@ a:link, a:active, a:visited{
 	height: 20%;
 	position: relative;
 }
-<<<<<<< HEAD
-
 #submitDiv
 {
 	width: 50%;
@@ -205,7 +203,6 @@ a:link, a:active, a:visited{
 	margin-top: 5%;
 }
 
-=======
 #topplista{
 
 	width: 100%;
@@ -215,7 +212,6 @@ a:link, a:active, a:visited{
 	margin-right: auto;
 	margin-left: auto;
 }
->>>>>>> origin/master
 /*PHP CSS*/
 
 #nagonting2{
