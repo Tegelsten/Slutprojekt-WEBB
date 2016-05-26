@@ -13,6 +13,7 @@ body
 	width: 15%;
 	min-width: 250px;
 	background-color: #1e1d1d;
+	border-right: solid 5px black;
 }
 #titel{
 	text-align: center;
