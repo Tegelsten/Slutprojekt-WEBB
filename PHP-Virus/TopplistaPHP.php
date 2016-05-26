@@ -10,7 +10,7 @@
 		
 		require_once('phpsaurus.php');
 		
-		$query = "SELECT `ID`, `FaktaNamn`, `FaktaLank`, `Roster` FROM `unfakta` ORDER BY Roster DESC LIMIT 10;";
+		$query = "SELECT `ID`, `FaktaNamn`, `FaktaLank`, Roster1,Roster2 FROM `unversus` ORDER BY Roster1+Roster2 DESC LIMIT 10;";
 
 		$response = @mysqli_query($dbc, $query);
 	
@@ -26,8 +26,10 @@
 		
 			while($row = mysqli_fetch_array($response)){
 		
+			$antalRoster = $row['Roster1'] + $row['Roster2'];
+		
 				echo '<tr id="hej"><td align="center" id="hej" ><a style=" color: rgb(228, 192, 0); "href="' . 
-				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center" >' . $row['Roster'];
+				$row['FaktaLank'] . '">' . $row['FaktaNamn'] . '</a></td><td align="center" >' . $antalRoster;
 				
 				echo '</tr>';
 		
