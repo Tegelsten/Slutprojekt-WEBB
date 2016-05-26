@@ -5,7 +5,7 @@
 		
 		if(isset($_GET['s']) && $_GET['s'] != ''){
 		$s = $_GET['s'];
-		$sql = "SELECT ID,FaktaNamn,FaktaLank,Roster FROM unfakta WHERE FaktaNamn LIKE '%$s%' ORDER BY Roster DESC";
+		$sql = "SELECT ID,FaktaNamn,FaktaLank,Roster1,Roster2 FROM unversus WHERE FaktaNamn LIKE '%$s%' ORDER BY Roster1+Roster2 DESC";
 		$result = mysqli_query($dbc,$sql);
 		while($row = mysqli_fetch_array($result)){
 			$url = $row['FaktaLank'];

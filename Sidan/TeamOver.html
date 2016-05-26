@@ -23,8 +23,9 @@
 		</script>
         
         <?php 
-			include("SidoRoster.php"); 
-		?>
+			include("SidoRoster2.php"); 
+                    
+        ?>
         
 	</head>
 		<body>	
@@ -34,7 +35,7 @@
 			<div id="swag">
 				<a href="html.html">
 				<h1 id="titel"><span style="color:#1D8641">Trivial</span><span style="color:#642673">poll</span></h1>
-				</a>
+			</a>
 				<a href="TopplistanHtml.html">
 					<div class="links">
 						<h2>Topplista</h2>
@@ -45,6 +46,11 @@
 						<h2>Random</h2>
 					</div>
 				</a> 
+				<a href="">	
+					<div class="links">
+						<h2>Hot</h2>
+					</div>
+				</a>
 				<a href="Submit.html">
 					<div class="links">
 						<h2>Submit</h2>
@@ -77,8 +83,8 @@
 	  			<div id="Horde"></div>
 
 	  			<div id="Alliance"></div>
-                
-	  			<script type="text/javascript">
+				
+				<script type="text/javascript">
 				
 				var sidaett = '<?php echo $Sida1 ?>'
 				var sidaroster = <?php echo $Roster1; ?>;
@@ -97,7 +103,8 @@
 				var Rosts = <?php echo $ID; ?>;
 				
 					function Rost1(){
-						window.location.href = "Rosta.php?Rost=" + Rosts;;
+						window.location.href = "Rosta.php?Rost=" + Rosts;
+						
 					}
 					
 					function Rost2(){

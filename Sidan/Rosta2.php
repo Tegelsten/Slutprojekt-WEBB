@@ -19,7 +19,8 @@
 		$response = @mysqli_query($dbc, $query);
 		
 		if ($response) {
-			header('Location: html.html');
+			header('Location: ' . $_SERVER["HTTP_REFERER"] );
+		exit;
 		} else {
 			echo "Error";
 		 }

@@ -9,7 +9,7 @@
 		
 		include ("phpsaurus.php");
 	
-		$query = "SELECT `Sida1`, `Roster1`, `Sida2`, `Roster2`, ID, FaktaNamn  FROM unversus WHERE ID = 2";
+		$query = "SELECT `Sida1`, `Roster1`, `Sida2`, `Roster2`,ID, FaktaNamn FROM unversus WHERE ID = 3";
 
 		$response = @mysqli_query($dbc, $query);
 		
@@ -35,8 +35,6 @@
 	
 				echo "Nope";
 				echo mysqli_error($dbc);
-
-
 		}
 		
 	?>
